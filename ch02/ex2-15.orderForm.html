@@ -1,0 +1,7 @@
+<!-- 리스트 2.15 유효성 검사 에러 보여주기 -->
+
+<label for="ccNumber">Credit Card #: </label>
+<input type="text" th:field="*{ccNumber}"/>
+<span class="validationError"
+      th:if="${#fields.hasErrors('ccNumber')}"
+      th:errors="*{ccNumber}">CC Num Error</span>

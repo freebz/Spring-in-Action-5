@@ -1,0 +1,23 @@
+// 리스트 2.7 타코 주문 폼을 나타내는 컨트롤러
+
+package tacos.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import lombok.extern.slf4j.Slf4j;
+import tacos.Order;
+
+@Slf4j
+@Controller
+@RequestMapping("/orders")
+public class OrderController {
+
+	@GetMapping("/current")
+	public String orderForm(Model model) {
+		model.addAttribute("order", new Order());
+		return "orderForm";
+	}
+}
