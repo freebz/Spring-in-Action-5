@@ -1,3 +1,5 @@
+// 리스트 3.17 Ingredient 클래스에 JPA 퍼시스턴스 애노테이션 추가하기
+
 package tacos;
 
 import javax.persistence.Entity;

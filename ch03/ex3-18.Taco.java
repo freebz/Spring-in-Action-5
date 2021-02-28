@@ -1,3 +1,5 @@
+// 리스트 3.18 Taco에 JPA 개체 애노테이션 지정하기
+
 package tacos;
 
 import java.util.Date;
@@ -9,6 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.PrePersist;
+
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 

@@ -1,3 +1,5 @@
+// 리스트 3.15 OrderController에서 OrderRepository 사용하기
+
 package tacos.web;
 
 import javax.validation.Valid;
@@ -13,7 +15,7 @@ import org.springframework.web.bind.support.SessionStatus;
 import lombok.extern.slf4j.Slf4j;
 import tacos.Order;
 import tacos.data.OrderRepository;
-
+...
 @Slf4j
 @Controller
 @RequestMapping("/orders")
