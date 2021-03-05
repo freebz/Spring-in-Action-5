@@ -1,0 +1,18 @@
+<!-- 리스트 4.20 홈페이지에 로그아웃 버튼 추가하기 -->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+  
+  ...
+  <body>
+    <h1>Welcome to...</h1>
+    <img th:src="@{/images/TacoCloud.png}"/>
+    
+    <form method="POST" th:action="@{/logout}" id="logoutForm">
+      <input type="submit" value="Logout"/>
+    </form>
+    
+    <a th:href="@{/design}" id="design">Design a taco</a>
+  </body>
+</html>

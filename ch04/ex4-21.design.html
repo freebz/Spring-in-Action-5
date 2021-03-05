@@ -1,0 +1,25 @@
+<!-- 리스트 4.21 타코 디자인 페이지에 로그아웃 버튼 추가하기 -->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+  ...
+  
+  <body>
+    <h1>Design your taco!</h1>
+    <h2>Feelin' hungry, <span th:text="${user.fullname}">NAME</span>?</h2>
+    <img th:src="@{/images/TacoCloud.png}"/>
+    
+    <form method="POST" th:action="@{/logout}" id="logoutForm">
+      <input type="submit" value="Logout"/>
+    </form>
+    
+    <form method="POST" th:object="${taco}" th:action="@{/design}"
+          id="tacoForm">
+        <span class="validationError">
+
+      ...
+    
+    </form>
+  </body>
+</html>
