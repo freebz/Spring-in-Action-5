@@ -1,0 +1,11 @@
+// 리스트 5.10 taco.orders.pageSize 속성의 메타데이터
+
+{
+  "properties": [
+    {
+	  "name": "taco.orders.page-size",
+      "type": "int",
+      "description": "Sets the maximum number of orders to display in a list."
+    }
+  ]
+}
