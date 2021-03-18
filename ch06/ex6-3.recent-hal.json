@@ -1,0 +1,53 @@
+// 리스트 6.3 하이퍼링크를 포함한 타코 리스트
+
+{
+  "_embedded": {
+    "tacoResourceList" [
+      {
+        "name": "Veg-Out",
+        "createdAt": "2018-01-31T20:15:53.219+0000",
+        "ingredients": [
+          {
+            "name": "Flour Tortilla", "type": "WRAP",
+            "_links": {
+            "self": { "href": "http://localhost:8080/ingredients/FLTO" }
+            }
+          },
+          {
+            "name": "Corn Tortilla", "type": "WRAP",
+            "_links": {
+            "self": { "href": "http://localhost:8080/ingredients/COTO" }
+            }
+          },
+          {
+            "name": "Diced Tomatoes", "type": "VEGGIES",
+            "_links": {
+            "self": { "href": "http://localhost:8080/ingredients/TMTO" }
+            }
+          },
+          {
+            "name": "Lettuce", "type": "VEGGIES",
+            "_links": {
+            "self": { "href": "http://localhost:8080/ingredients/LETC" }
+            }
+          },
+          {
+            "name": "Salsa", "type": "SAUCE",
+            "_links": {
+            "self": { "href": "http://localhost:8080/ingredients/SLSA" }
+            }
+          },
+        ],
+        "_links": {
+          "href": "http://localhost:8080/design/4"
+        }
+      },
+      ...
+    ]
+  },
+  "_links": {
+    "recents": {
+      "href": "http://localhost:8080/design/recent"
+    }
+  }
+}
