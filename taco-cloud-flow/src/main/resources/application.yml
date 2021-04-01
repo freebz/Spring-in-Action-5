@@ -1,0 +1,35 @@
+taco:
+  orders:
+    pageSize: 10
+    
+tacocloud:
+  email:
+    host: imap.tacocloud.com
+    mailbox: INBOX
+    username: taco-in-flow
+    password: 1L0v3T4c0s
+    poll-rate: 10000
+  api:
+    url: http://api.tacocloud.com
+    
+spring:
+  data:
+    rest:
+      base-path: /api
+  jms:
+    template:
+      default-destination: tacocloud.order.queue
+  rabbitmq:
+    template:
+      exchange: tacocloud.orders
+      routing-key: kitchens.central
+      receive-timeout: 30000
+  kafka:
+    bootstrap-servers:
+    - kafka.tacocloud.com:9092
+    - kafka.tacocloud.com:9093
+    - kafka.tacocloud.com:9094
+    template:
+      default-topic: tacocloud.orders.topic
+  main:
+    web-application-type: none
