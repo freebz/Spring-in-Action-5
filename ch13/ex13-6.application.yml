@@ -1,0 +1,42 @@
+# 리스트 13.6 스프링 프로파일을 사용해서 두 개의 유레카 구성하기
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    
+---
+spring:
+  profiles: eureka-1
+  application:
+    name: eureka-1
+
+server:
+  port: 8761
+  
+eureka:
+  instance:
+    hostname: eureka1.tacocloud.com
+    
+other:
+  eureka:
+    host: eureka2.tacocloud.com
+    port: 8761
+
+---
+spring:
+  profiles: eureka-2
+  application:
+    name: eureka-2
+
+server:
+  port: 8762
+
+eureka:
+  instance:
+    hostname: eureka2.tacocloud.com
+    
+other:
+  eureka:
+    host: eureka1.tacocloud.com
+    port: 8762

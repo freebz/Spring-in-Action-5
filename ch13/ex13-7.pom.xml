@@ -1,0 +1,6 @@
+<!-- 리스트 13.7 유레카 클라이언트 스타터 의존성 추가하기 -->
+
+<dependency>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+</dependency>
