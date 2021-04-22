@@ -1,0 +1,33 @@
+spring:
+  cloud:
+    config:
+      uri: http://config.tacocloud.com:8888
+      server:
+        git:
+          uri: http://localhost:10080/tacocloud/tacocloud-config
+          order: 2
+        vault:
+          host: vault.tacocloud.com
+          port: 8200
+          scheme: https
+          order: 1
+        encrypt:
+          enabled: false
+  data:
+    mongodb:
+      password: '{cipher}93912a660a7f3c04e811b5df9a3cf6e1f63850...'
+  profiles:
+    active:
+      - vault
+      - git
+
+encrypt:
+  key: s3cr3t
+  key-store:
+    alias: tacokey
+    location: classpath:/keystore.jks
+    password: l3tm31n
+    secret: s3cr3t
+
+greeting:
+  message: Hello World!

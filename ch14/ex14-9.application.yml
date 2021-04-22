@@ -1,0 +1,9 @@
+# 리스트 14.9 구성 속성이 저장된 Git 리퍼지터리의 하위 경로 설정
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/habuma/tacocloud-config
+          search-paths: config

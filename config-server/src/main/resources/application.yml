@@ -1,0 +1,23 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/habuma/tacocloud-config
+          search-paths: config, moreConfig, more*
+          default-label: sidework
+          username: tacocloud
+          password: s3cr3tP455w0rd
+  rabbitmq:
+    host: rabbit.tacocloud.com
+    port: 5672
+    username: tacocloud
+    password: s3cr3t
+  kafka:
+    bootstrap-servers:
+    - kafka.tacocloud.com:9092
+    - kafka.tacocloud.com:9093
+    - kafka.tacocloud.com:9094

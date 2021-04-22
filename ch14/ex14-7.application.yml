@@ -1,0 +1,9 @@
+# 리스트 14.7 application.yml에 설정된 구성 속성
+
+server:
+  port: 0
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:8761/eureka/

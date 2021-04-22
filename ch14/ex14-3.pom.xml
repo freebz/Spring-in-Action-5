@@ -1,0 +1,6 @@
+<!-- 리스트 14.3 spring-cloud.version 속성 -->
+
+<properties>
+	...
+	<spring-cloud.version>Hoxton.SR3</spring-cloud.version>
+</properties>
