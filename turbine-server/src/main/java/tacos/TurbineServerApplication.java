@@ -2,14 +2,14 @@ package tacos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.netflix.turbine.EnableTurbine;
 
 @SpringBootApplication
-@EnableHystrix
-public class IngredientClientApplication {
+@EnableTurbine
+public class TurbineServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(IngredientClientApplication.class, args);
+		SpringApplication.run(TurbineServerApplication.class, args);
 	}
 
 }
