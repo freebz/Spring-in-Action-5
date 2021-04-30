@@ -1,0 +1,49 @@
+// 리스트 16.4 /info endpoint를 통해 노출된 Git 커밋 정보
+
+{
+	"git": {
+		"build": {
+			"host": "DarkSide.local",
+			"version": "0.0.16-SNAPSHOT",
+			"time": "2018-06-02T18:11:23Z",
+			"user": {
+				"name": "Craig Walls",
+				"email": "craig@habuma.com"
+			}
+		},
+		"branch": "master",
+		"commit": {
+			"message": {
+				"short": "Add Spring Boot Admin and Actuator",
+				"full": "Add Spring Boot Admin and Actuator"
+			},
+			"id": {
+				"describe": "b5c104d-dirty",
+				"abbrev": "b5c104d",
+				"describe-short": "b5c104d-dirty",
+				"full": "b5c104d1fcbe6c2b84965ea08a330595100fd44e"
+			},
+			"time": "2018-06-02T18:10:58Z",
+			"user": {
+				"email": "craig@habuma.com",
+				"name": "Craig Walls"
+			}
+		},
+		"closest": {
+			"tag": {
+				"name": "",
+				"commit": {
+					"count": ""
+				}
+			}
+		},
+		"dirty": "true",
+		"remote": {
+			"origin": {
+				"url": "Unknown"
+			}
+		},
+		"tags": ""
+	},
+	...
+}
