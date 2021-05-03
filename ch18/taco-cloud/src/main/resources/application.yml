@@ -1,0 +1,19 @@
+taco:
+  orders:
+    pageSize: 10
+    
+management:
+  endpoints:
+    web:
+      #base-path: /management
+      exposure:
+        #include: health,info,beans,conditions
+        include: '*'
+        exclude: threaddump,heapdump
+    health:
+      show-details: always
+        
+info:
+  contact:
+    email: support@tacocloud.com
+    phone: 822-625-6831
